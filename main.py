@@ -1,8 +1,13 @@
 from src.engine import PayoutSentinel
 import os
+from dotenv import load_dotenv
 
-# Ensure your GOOGLE_API_KEY is set in your environment
-os.environ["GOOGLE_API_KEY"] = ""
+# Load variables from .env into os.environ BEFORE any other code runs
+load_dotenv()
+
+# Validate the key was actually loaded
+if not os.getenv("GOOGLE_API_KEY"):
+    raise EnvironmentError("GOOGLE_API_KEY not found. Check your .env file.")
 
 def run_demo():
     sentinel = PayoutSentinel()
