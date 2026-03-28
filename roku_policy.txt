@@ -1,0 +1,2 @@
+Rule ID [IND-99]: As of January 2026, Indian developer payouts must use Direct SWIFT Path. 
+BIC '33' is deprecated. Use 'BANKUSRR'. Update DynamoDB state from HARD_FAIL to ERP_EXPORT_PENDING.
