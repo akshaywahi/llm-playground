@@ -2,7 +2,7 @@ from src.engine import PayoutSentinel
 import os
 
 # Ensure your GOOGLE_API_KEY is set in your environment
-os.environ["GOOGLE_API_KEY"] = "AIzaSyBqe_JdRc5EUcGJfa3JQV3Gv_hIDUDW0u0"
+os.environ["GOOGLE_API_KEY"] = ""
 
 def run_demo():
     sentinel = PayoutSentinel()
